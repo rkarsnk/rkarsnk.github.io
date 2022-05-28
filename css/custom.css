@@ -71,6 +71,22 @@ nav.pagination .current {
     color: #000000;
 }
 
+.post-content h2 {
+    border-left: 6px solid #ff6347;
+    border-bottom: 1px solid #d1d1d1;
+    padding-left: 4px;
+}
+
+.post-content h3 {
+    border-left: 4px solid #4169e1;
+    border-bottom: 1px solid #d1d1d1;
+    padding-left: 6px;
+}
+
+.post-content h4 {
+    padding-left: 0px;
+}
+
 div.breadcrumbs {
     font-size: 80%;
     padding: 20px 0 0 20px;
@@ -100,47 +116,4 @@ iframe {
     div .nav-next {
         display: none;
     }
-}
-.post-header h1,h2{
-    border-left: 6px solid #000000;
-    border-bottom: 1px solid #000000;
-    padding-left: 4px;
-    margin-bottom: 4px;
-}
-.post-content h1{
-    border-left: 6px solid #ff6347;
-    border-bottom: 1px solid #d1d1d1;
-    padding-left: 4px;
-}
-
-.post-content h2 {
-    border-left: 6px solid #4169e1;
-    border-bottom: 1px solid #d1d1d1;
-    padding-left: 6px;
-}
-
-.post-content h3 {
-    border-left: 4px solid #000000;
-    border-bottom: 1px solid #d1d1d1;
-    padding-left: 8px;
-}
-
-.post-content h4 {
-    padding-left: 0px;
-}
-
-/* 投稿一覧表示 境界線*/
-.clearfix .post-footer {
-    border-bottom: 0px solid #ffffff;
-}
-
-
-pre{
-    background-color: #efefef !important;
-    color: #000000 !important;
-    border-radius: 5px !important;
-}
-
-code{
-    font-family: 'Operator Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
 }
