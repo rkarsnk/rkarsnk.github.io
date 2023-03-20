@@ -56,7 +56,6 @@ body {
 article,
 aside,
 details,
-figcaption,
 figure,
 footer,
 header,
@@ -69,6 +68,7 @@ summary {
   display: block; }
 
 figcaption {
+  display: block;
   text-align: center;
 }
 /**
