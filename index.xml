@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>気まぐれ気紛れ草紙</title><link>https://blog.rkarsnk.jp/</link><description>Recent content on 気まぐれ気紛れ草紙</description><generator>Hugo -- gohugo.io</generator><language>ja</language><lastBuildDate>Sun, 14 May 2023 16:10:08 +0900</lastBuildDate><atom:link href="https://blog.rkarsnk.jp/index.xml" rel="self" type="application/rss+xml"/><item><title>Debian Live Build を使用したカスタムインストールISOの作成</title><link>https://blog.rkarsnk.jp/post/2023/05/14/202305debianlivebuild/</link><pubDate>Sun, 14 May 2023 16:10:08 +0900</pubDate><guid>https://blog.rkarsnk.jp/post/2023/05/14/202305debianlivebuild/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>気まぐれ気紛れ草紙</title><link>https://blog.rkarsnk.jp/</link><description>Recent content on 気まぐれ気紛れ草紙</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sun, 14 May 2023 16:10:08 +0900</lastBuildDate><atom:link href="https://blog.rkarsnk.jp/index.xml" rel="self" type="application/rss+xml"/><item><title>Debian Live Build を使用したカスタムインストールISOの作成</title><link>https://blog.rkarsnk.jp/post/2023/05/14/202305debianlivebuild/</link><pubDate>Sun, 14 May 2023 16:10:08 +0900</pubDate><guid>https://blog.rkarsnk.jp/post/2023/05/14/202305debianlivebuild/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
 &lt;p>日本国内において，個人や学生開発コミュニティが主体となって，Linuxディストリビューションを開発する動きが盛んになっている．これらのディストリビューションの多くは，DebianやUbuntu，Arch Linuxなどのメジャーディストリビューションをベースにしているものが大半を占めており，パッケージリポジトリもメジャーディストリビューションのものを流用している．言い換えると，これらのディストリビューションはメジャーディストリビューションを自分好みにカスタムしたフレーバ版である．&lt;/p>
 &lt;p>フレーバ版の開発が盛んになった背景には，カスタムインストールISO(以下，カスタムISO)の作成が容易になったことが挙げられる．これらのツールには，Debia Live Projectが開発するDebian Live Buildや，Debian ベースのMXLinuxが開発公開している&lt;a href="https://github.com/MX-Linux/build-iso-mx">build-iso-mx&lt;/a>，&lt;a href="https://github.com/nerun/remastersys">remastersys&lt;/a>などがある．&lt;/p>
 &lt;p>本記事では，Debian Live Buildについて，実際に使用し，使い方をまとめる．&lt;/p>
@@ -6,19 +6,13 @@
 &lt;p>先日，Twitterにて &lt;code>@KuniSuzaki&lt;/code> さんと，WSL2のLinuxやVM上でパフォーマンスカウンタ(PMU)を利用する方法についてツイートのやりとりをした．その際，Hyper-V上の仮想マシンでPMUを利用する方法について調べたので整理することにした．&lt;/p></description></item><item><title>コロナウィルスに感染した記録</title><link>https://blog.rkarsnk.jp/post/2023/03/13/202302covid19/</link><pubDate>Mon, 13 Mar 2023 12:42:36 +0900</pubDate><guid>https://blog.rkarsnk.jp/post/2023/03/13/202302covid19/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
 &lt;p>2023年2月，初めてコロナウィルスに感染したので，その感染の経緯も含めて経過をここに記録する．&lt;/p></description></item><item><title>UEFIアプリケーションをデバッグする</title><link>https://blog.rkarsnk.jp/post/2021/12/10/debugefiapp/</link><pubDate>Fri, 10 Dec 2021 15:15:09 +0900</pubDate><guid>https://blog.rkarsnk.jp/post/2021/12/10/debugefiapp/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
 &lt;p>この記事は&lt;a href="https://adventar.org/calendars/6581">自作OS Advent Calendar 2021&lt;/a>の11日目の記事として書かれました。&lt;/p>
-&lt;p>元ネタは、&lt;a href="https://github.com/rkarsnk/SaintOS/blob/main/docs/HOW_TO_DEBUG.md">こちら&lt;/a>です。&lt;/p></description></item><item><title>このblogについて</title><link>https://blog.rkarsnk.jp/about/</link><pubDate>Tue, 29 Dec 2020 17:07:26 +0900</pubDate><guid>https://blog.rkarsnk.jp/about/</guid><description>プロフィール 身体表現性障害の療養中である管理人のrkarsnkが、いやな気を紛らわすために、興味あること・調べたこと・メモとして残しておきたいことを、気まぐれに書いていくblogです。
+&lt;p>元ネタは、&lt;a href="https://github.com/rkarsnk/SaintOS/blob/main/docs/HOW_TO_DEBUG.md">こちら&lt;/a>です。&lt;/p></description></item><item><title>自己紹介</title><link>https://blog.rkarsnk.jp/about/</link><pubDate>Tue, 29 Dec 2020 17:07:26 +0900</pubDate><guid>https://blog.rkarsnk.jp/about/</guid><description>プロフィール 身体表現性障害の療養中である管理人のrkarsnk(カナやん)が、症状によって発生する嫌な気を紛らわすために、興味あること・調べたこと・メモとして残しておきたいことを、気まぐれに書いていくblogです。
 気を紛らわすために、書くので症状については、いっさい書きません。（書いたら気紛れにならない）
-サイトデザイン このblogはWebフレームワークのHugoを利用して作成しています。
-Hugo用のテーマはinkblottyを使用し、一部改変しています。
-自宅サーバの構成 我が家の自宅サーバは、HPのProLiantや、DellのPowerEdgeなどのサーバ専用機を使用せず、自作PCを利用して構築しています。
-サーバとして利用しているPCのスペックは、以下のとおりです。
-パーツ メーカ 製品名 備考 CPU AMD Ryzen 5 2400G 4Core 8スレッド M/B ASRock Fatal1ty AB350 Gaming-ITX/AC Mini-ITX RAM Team Team DDR4 2400Mhz PC4-19200 8GBx2枚 ストレージ1(SSD) Western Digital WDS250G2B0B M.2 SSD 250GB ESXi用 ストレージ2(HDD) Hitachi HDS723020BLA642 Deskstar 2TB　RAID1用 ストレージ3(HDD) Hitachi HDS723020BLA642 Deskstar 2TB　RAID1用 RAIDカード NEC N8103-171 LSI MegaRaid SAS 9240 のOEM 電源 玄人志向 450W 製品名忘れました… ケース Cubitek MiniCube(CB-MNI-B004) 製造メーカはもう存在しない… 自作PC用のM/Bによっては、VMware ESXiがインストールできないものがあります。
-Realtekのonboard NICを搭載しているものは、ほぼインストーラではじかれますが、私が使用したM/Bはゲーム用向けと謳っているだけあって、Intelのonboard NICが搭載されていました1。
-動作しているOS 上記の自作PCで、ハイパーバイザとしてVMware ESXiが、ESXi上の仮想マシンとしてUbuntu 20.04 LTSが動作しています。
-ハイパーバイザ OS名 バージョン 備考 VMware vSphere Hypervisor (ESXi) 6.7.0u3 無償ライセンスにて利用 VMware ESXiの最新バージョンは7.0ですが、使用しているRAIDカードが7.0ではサポートされていないため、6.7を利用しています。
-仮想マシン OS名 バージョン 備考 Ubuntu Server 20.04 LTS Sambaサーバ Debian 11 コンテナサーバ Debian 10 多目的 当初はCentOS8を導入しようとおもっていましたが、CentOS8終了のお知らせがRed Hatから発表されたので、Ubuntuにしました2。
-この仮想マシンでは、そのうちコンテナを使ってGitLabとかも動作させようと考えています。
-2021/02/06追記 Sambaが動いていたUbuntu Serverは消去して、Debian 11に変更しました。
-Sambaについては、Debian 11が正式リリースされたタイミングに合わせて、Debian 11上にコンテナとして実装しようと思っています。
-PCI-ExpressのIntel製NICを搭載すれば、インストールできるので安心してください。&amp;#160;&amp;#x21a9;&amp;#xfe0e;
-個人利用の範囲なので、CentOS Streamで特に困ることはないと思うのですが…&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item></channel></rss>
+職務経歴書 2024 年 7月 29日 現在
+※こちらは公開版なので，一般個人情報および組織名などの情報は伏せています．
+基本情報 氏 名： 生年月日：1983年 *月 *日 (41歳) 最終学歴：関西にある私立大学 大学院 理工学研究科 情報理工学専攻 博士前期課程(修士課程) 修了 現 住 所：大阪在住 職務経歴 ○○株式会社 2009年4月 入社 2020年6月 退職 主な業務経験 (システムプラットフォーム関連：2009/04〜2020/06) Linuxのリアルタイム性能評価 (2名)
+Linuxを実システムに導入するための事前評価として，リアルタイムプライオリティを設定したプロセスの実行時間および応答性能を測定．VanilaなLinuxカーネルとPREEMPT_RTパッチを導入したLinuxカーネルにて測定し，結果を事業部に報告した． 使用スキル: C言語，Linux サーバ集約時に実機と同等の負荷を仮想サーバで再現する負荷試験ツール開発(2名→1名)
+集約前の実機からCPU/メモリ/ディスク/ネットワークの使用率を取得し，同等の負荷を仮想サーバ上で再現できるツールを開発．また，ツール利用者が指定した負荷を生成できる機能も追加で開発した． 使用スキル: C言語，Java(JSP/Servlet)，JavaScript，Windows VMスナップショット機能を利用したシステム試験環境構築ツールの開発(1名)
+KVMのスナップショット機能をシステム試験環境をロールバックするツールの開発 使用スキル: C言語，Bash，Linux，KVM Security Operation Center向け演習用のログ生成ツールの開発(1名)
+既存のWebサーバのログを入力として，演習環境に類似のログを再生する補助ツールを開発 使用スキル: Python 仮想マシン自動構築ツールの改良(1名)
+データベースに仮想マシンの仕様を入力し，仕様通りの仮想マシンを構築するツールの改良開発 仕様スキル: Java，PowerShell，VMware vCenter CLI，SQLServer 保有スキル Linux/KVM システム管理 プログラミング C Java Python シェルスクリプト(Bash/Windows Powershell) 興味ある分野 システム サーバプラットフォームにおける管理の自動化 組織内個人端末設定の自動化 プログラミング言語/フレームワーク Rust (勉強中) Go (未着手) eBPF (概要のみ理解，実践は未) Flutter (書籍は持っている) Tauri (未着手)</description></item></channel></rss>
