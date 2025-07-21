@@ -6,13 +6,86 @@
 &lt;p>先日，Twitterにて &lt;code>@KuniSuzaki&lt;/code> さんと，WSL2のLinuxやVM上でパフォーマンスカウンタ(PMU)を利用する方法についてツイートのやりとりをした．その際，Hyper-V上の仮想マシンでPMUを利用する方法について調べたので整理することにした．&lt;/p></description></item><item><title>コロナウィルスに感染した記録</title><link>https://blog.rkarsnk.jp/post/2023/03/13/202302covid19/</link><pubDate>Mon, 13 Mar 2023 12:42:36 +0900</pubDate><guid>https://blog.rkarsnk.jp/post/2023/03/13/202302covid19/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
 &lt;p>2023年2月，初めてコロナウィルスに感染したので，その感染の経緯も含めて経過をここに記録する．&lt;/p></description></item><item><title>UEFIアプリケーションをデバッグする</title><link>https://blog.rkarsnk.jp/post/2021/12/10/debugefiapp/</link><pubDate>Fri, 10 Dec 2021 15:15:09 +0900</pubDate><guid>https://blog.rkarsnk.jp/post/2021/12/10/debugefiapp/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
 &lt;p>この記事は&lt;a href="https://adventar.org/calendars/6581">自作OS Advent Calendar 2021&lt;/a>の11日目の記事として書かれました。&lt;/p>
-&lt;p>元ネタは、&lt;a href="https://github.com/rkarsnk/SaintOS/blob/main/docs/HOW_TO_DEBUG.md">こちら&lt;/a>です。&lt;/p></description></item><item><title>自己紹介</title><link>https://blog.rkarsnk.jp/about/</link><pubDate>Tue, 29 Dec 2020 17:07:26 +0900</pubDate><guid>https://blog.rkarsnk.jp/about/</guid><description>プロフィール 身体表現性障害の療養中である管理人のrkarsnk(カナやん)が、症状によって発生する嫌な気を紛らわすために、興味あること・調べたこと・メモとして残しておきたいことを、気まぐれに書いていくblogです。
-気を紛らわすために、書くので症状については、いっさい書きません。（書いたら気紛れにならない）
-職務経歴書 2024 年 7月 29日 現在
-※こちらは公開版なので，一般個人情報および組織名などの情報は伏せています．
-基本情報 氏 名： 生年月日：1983年 *月 *日 (41歳) 最終学歴：関西にある私立大学 大学院 理工学研究科 情報理工学専攻 博士前期課程(修士課程) 修了 現 住 所：大阪在住 職務経歴 ○○株式会社 2009年4月 入社 2020年6月 退職 主な業務経験 (システムプラットフォーム関連：2009/04〜2020/06) Linuxのリアルタイム性能評価 (2名)
-Linuxを実システムに導入するための事前評価として，リアルタイムプライオリティを設定したプロセスの実行時間および応答性能を測定．VanilaなLinuxカーネルとPREEMPT_RTパッチを導入したLinuxカーネルにて測定し，結果を事業部に報告した． 使用スキル: C言語，Linux サーバ集約時に実機と同等の負荷を仮想サーバで再現する負荷試験ツール開発(2名→1名)
-集約前の実機からCPU/メモリ/ディスク/ネットワークの使用率を取得し，同等の負荷を仮想サーバ上で再現できるツールを開発．また，ツール利用者が指定した負荷を生成できる機能も追加で開発した． 使用スキル: C言語，Java(JSP/Servlet)，JavaScript，Windows VMスナップショット機能を利用したシステム試験環境構築ツールの開発(1名)
-KVMのスナップショット機能をシステム試験環境をロールバックするツールの開発 使用スキル: C言語，Bash，Linux，KVM Security Operation Center向け演習用のログ生成ツールの開発(1名)
-既存のWebサーバのログを入力として，演習環境に類似のログを再生する補助ツールを開発 使用スキル: Python 仮想マシン自動構築ツールの改良(1名)
-データベースに仮想マシンの仕様を入力し，仕様通りの仮想マシンを構築するツールの改良開発 仕様スキル: Java，PowerShell，VMware vCenter CLI，SQLServer 保有スキル Linux/KVM システム管理 プログラミング C Java Python シェルスクリプト(Bash/Windows Powershell) 興味ある分野 システム サーバプラットフォームにおける管理の自動化 組織内個人端末設定の自動化 プログラミング言語/フレームワーク Rust (勉強中) Go (未着手) eBPF (概要のみ理解，実践は未) Flutter (書籍は持っている) Tauri (未着手)</description></item></channel></rss>
+&lt;p>元ネタは、&lt;a href="https://github.com/rkarsnk/SaintOS/blob/main/docs/HOW_TO_DEBUG.md">こちら&lt;/a>です。&lt;/p></description></item><item><title>自己紹介</title><link>https://blog.rkarsnk.jp/about/</link><pubDate>Tue, 29 Dec 2020 17:07:26 +0900</pubDate><guid>https://blog.rkarsnk.jp/about/</guid><description>&lt;h1 id="プロフィール">プロフィール&lt;/h1>
+&lt;p>身体表現性障害の療養中である管理人のrkarsnk(カナやん)が、症状によって発生する嫌な気を紛らわすために、興味あること・調べたこと・メモとして残しておきたいことを、気まぐれに書いていくblogです。&lt;/p>
+&lt;p>気を紛らわすために、書くので症状については、いっさい書きません。（&lt;del>書いたら気紛れにならない&lt;/del>）&lt;/p>
+&lt;h1 id="職務経歴書">職務経歴書&lt;/h1>
+&lt;p>2024 年 7月 29日 現在&lt;/p>
+&lt;p>※こちらは公開版なので，一般個人情報および組織名などの情報は伏せています．&lt;/p>
+&lt;h2 id="基本情報">基本情報&lt;/h2>
+&lt;ul>
+&lt;li>氏 名：&lt;/li>
+&lt;li>生年月日：1983年 *月 *日 (41歳)&lt;/li>
+&lt;li>最終学歴：関西にある私立大学 大学院 理工学研究科 情報理工学専攻 博士前期課程(修士課程) 修了&lt;/li>
+&lt;li>現 住 所：大阪在住&lt;/li>
+&lt;/ul>
+&lt;h2 id="職務経歴">職務経歴&lt;/h2>
+&lt;h3 id="株式会社">○○株式会社&lt;/h3>
+&lt;ul>
+&lt;li>2009年4月 入社&lt;/li>
+&lt;li>2020年6月 退職&lt;/li>
+&lt;/ul>
+&lt;h2 id="主な業務経験-システムプラットフォーム関連200904202006">主な業務経験 (システムプラットフォーム関連：2009/04〜2020/06)&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Linuxのリアルタイム性能評価 (2名)&lt;/p>
+&lt;ul>
+&lt;li>Linuxを実システムに導入するための事前評価として，リアルタイムプライオリティを設定したプロセスの実行時間および応答性能を測定．VanilaなLinuxカーネルとPREEMPT_RTパッチを導入したLinuxカーネルにて測定し，結果を事業部に報告した．&lt;/li>
+&lt;li>使用スキル: C言語，Linux&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>サーバ集約時に実機と同等の負荷を仮想サーバで再現する負荷試験ツール開発(2名→1名)&lt;/p>
+&lt;ul>
+&lt;li>集約前の実機からCPU/メモリ/ディスク/ネットワークの使用率を取得し，同等の負荷を仮想サーバ上で再現できるツールを開発．また，ツール利用者が指定した負荷を生成できる機能も追加で開発した．&lt;/li>
+&lt;li>使用スキル: C言語，Java(JSP/Servlet)，JavaScript，Windows&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>VMスナップショット機能を利用したシステム試験環境構築ツールの開発(1名)&lt;/p>
+&lt;ul>
+&lt;li>KVMのスナップショット機能をシステム試験環境をロールバックするツールの開発&lt;/li>
+&lt;li>使用スキル: C言語，Bash，Linux，KVM&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Security Operation Center向け演習用のログ生成ツールの開発(1名)&lt;/p>
+&lt;ul>
+&lt;li>既存のWebサーバのログを入力として，演習環境に類似のログを再生する補助ツールを開発&lt;/li>
+&lt;li>使用スキル: Python&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>仮想マシン自動構築ツールの改良(1名)&lt;/p>
+&lt;ul>
+&lt;li>データベースに仮想マシンの仕様を入力し，仕様通りの仮想マシンを構築するツールの改良開発&lt;/li>
+&lt;li>仕様スキル: Java，PowerShell，VMware vCenter CLI，SQLServer&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="保有スキル">保有スキル&lt;/h2>
+&lt;ul>
+&lt;li>Linux/KVM システム管理&lt;/li>
+&lt;li>プログラミング
+&lt;ul>
+&lt;li>C&lt;/li>
+&lt;li>Java&lt;/li>
+&lt;li>Python&lt;/li>
+&lt;li>シェルスクリプト(Bash/Windows Powershell)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="興味ある分野">興味ある分野&lt;/h2>
+&lt;h3 id="システム">システム&lt;/h3>
+&lt;ul>
+&lt;li>サーバプラットフォームにおける管理の自動化&lt;/li>
+&lt;li>組織内個人端末設定の自動化&lt;/li>
+&lt;/ul>
+&lt;h3 id="プログラミング言語フレームワーク">プログラミング言語/フレームワーク&lt;/h3>
+&lt;ul>
+&lt;li>Rust (勉強中)&lt;/li>
+&lt;li>Go (未着手)&lt;/li>
+&lt;li>eBPF (概要のみ理解，実践は未)&lt;/li>
+&lt;li>Flutter (書籍は持っている)&lt;/li>
+&lt;li>Tauri (未着手)&lt;/li>
+&lt;/ul></description></item></channel></rss>
