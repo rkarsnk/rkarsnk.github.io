@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Proxmox VE on 気まぐれ気紛れ草紙</title><link>https://blog.rkarsnk.jp/categories/proxmox-ve/</link><description>Recent content in Proxmox VE on 気まぐれ気紛れ草紙</description><generator>Hugo</generator><language>ja</language><lastBuildDate>Sun, 10 Aug 2025 14:02:49 +0900</lastBuildDate><atom:link href="https://blog.rkarsnk.jp/categories/proxmox-ve/index.xml" rel="self" type="application/rss+xml"/><item><title>第1回 Proxmox VE 9.0 : 導入</title><link>https://blog.rkarsnk.jp/post/2025/08/10/20250810_pve01/</link><pubDate>Sun, 10 Aug 2025 14:02:49 +0900</pubDate><guid>https://blog.rkarsnk.jp/post/2025/08/10/20250810_pve01/</guid><description>&lt;h1 id="はじめに">はじめに&lt;/h1>
+&lt;p>同僚からProxmox VEについて知りたいという要望があったのでn番煎じな内容となりますが、Proxomox VEについて記事にしたいと思います。複数回に分けて書くことになりますが、Proxmox VE上にVMまたはLXCを導入して、その上にDockerを導入するところまで記事にしたいなと思っています。&lt;/p>
+&lt;p>Proxmox VEのインストールは、公式インストールISOを利用する方法と、Debian GNU/Linux (以下、Debianと記す)に追加でパッケージを導入する方法があります。この記事ではISOを利用する方法について触れます。&lt;/p>
+&lt;p>2025/08/10 時点では、Proxmox VEのベースはDebianの最新版である13(Trixie)になっています。&lt;/p>
+&lt;h1 id="本記事の想定読者">本記事の想定読者&lt;/h1>
+&lt;ul>
+&lt;li>はじめてProxmox VEを使う方&lt;/li>
+&lt;li>手っ取り早く仮想化環境を体験したい方&lt;/li>
+&lt;/ul></description></item></channel></rss>
